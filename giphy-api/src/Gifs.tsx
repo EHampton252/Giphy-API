@@ -23,7 +23,7 @@ function Gifs() {
         // Then: converts the response to JSON if using React FETCH API
         // .then((response) => response.json())
         // Then: takes the data and sets the gifs state to the data received from the API
-        .then((data) => {
+        .then(({ data }) => {
             setGifs(data.data);
         })
         // Catch: if there is an error, set the error state to true
